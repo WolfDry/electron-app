@@ -1,4 +1,4 @@
-const listId = []
+const listId = [];
 
 function addTask(){
     var randomNumber = Math.floor(Math.random() * 99999)
