@@ -9,6 +9,15 @@ body{
     height: 100vh;
     background: #066acd;
 }
+.navbar{
+    background-color: white;
+    padding: 20px;
+}
+.navbar a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
 .container{
     width: 40%;
     top: 50%;
