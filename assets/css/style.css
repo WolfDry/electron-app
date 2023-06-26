@@ -9,6 +9,9 @@ body{
     height: 100vh;
     background: #066acd;
 }
+h3{
+    font-family: 'Poppins',sans-serif;
+}
 .navbar{
     background-color: white;
     padding: 20px;
@@ -18,23 +21,34 @@ body{
     text-decoration: none;
     padding: 10px;
 }
+#gifContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+}
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+}
 .container{
     width: 40%;
-    top: 50%;
-    left: 50%;
-    background: white;
-    border-radius: 10px;
     min-width: 450px;
-    position: absolute;
-    min-height: 100px;
-    transform: translate(-50%,-50%);
+    margin: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
 }
 #newtask{
     position: relative;
     padding: 30px 20px;
 }
-#newtask input{
-    width: 75%;
+#newtask input,
+#newtask select{
+    width: 300px;
     height: 45px;
     padding: 12px;
     color: #111111;

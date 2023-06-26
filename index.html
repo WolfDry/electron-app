@@ -7,8 +7,8 @@
       http-equiv="X-Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
-    <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js"></script>
     <script src="./pizza/GetPizzas.js"></script>
     <script src="./pizza/AddPizza.js"></script>
     <script src="./pizza/DeletePizza.js"></script>
@@ -20,15 +20,31 @@
       <a href="index.html">Home</a>
       <a href="chart.html">Chart</a>
     </nav>
-    <div class="container">
-        <div id="newtask">
-            <input type="text" placeholder="Name" id="input_name">
-            <input type="text" placeholder="Flavor" id="input_flavor">
-            <input type="number" placeholder="Price" id="input_price" min="0" max="999">
-            <button id="push" onclick="addPizza()">Add</button>
-        </div>
-        <div id="tasks"></div>
+    <div id="gifContainer">
+      <img src="./assets/img/118871-pizza-slices.gif" alt="">
     </div>
+    <section class="section">
+      <div class="container">
+          <div id="newtask">
+            <h3 style="text-align: center; margin: 10px; padding: 10px">Ajouter une pizza</h3>
+            <div style="display: flex; justify-content: space-around">
+              <input type="text" placeholder="Name" id="input_name">
+              <select id="input_flavor">
+                <option value="Crème">Crème</option>
+                <option value="Tomate">Tomate</option>
+              </select>
+            </div>
+            <div style="display: flex; justify-content: space-around; margin: 10px">
+              <input type="number" placeholder="Price" id="input_price" min="0" max="999">
+            </div>
+            <button id="push" onclick="addPizza()">Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div id="tasks"></div>
+      </div>
+    </section>
   </body>
   <script>
     getPizzas()
